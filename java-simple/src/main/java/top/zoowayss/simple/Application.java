@@ -8,11 +8,7 @@ package top.zoowayss.simple;
 
 public class Application {
 
-    public static void sleep(long time) {
-        try {
-            Thread.sleep(time);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) {
+
     }
 }
