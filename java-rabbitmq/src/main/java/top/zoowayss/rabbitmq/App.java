@@ -6,4 +6,6 @@ package top.zoowayss.rabbitmq;
  */
 
 public class App {
+
+
 }

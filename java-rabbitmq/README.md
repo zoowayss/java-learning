@@ -1,5 +1,7 @@
 # rabbitmq 学习项目
 
+⚠️注：本项目完全参照 [rabbitmq 官方教程](https://www.rabbitmq.com/tutorials/tutorial-one-java)
+
 ## 安装 rabbitmq
 这里采用 docker 安装
 ```groovy
