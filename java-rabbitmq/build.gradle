@@ -11,6 +11,15 @@ repositories {
     mavenCentral()
 }
 
+task runWorker(type: JavaExec) {
+    main = 'top.zoowayss.rabbitmq.workqueue.Worker' // 指定要执行的主类
+    classpath = sourceSets.main.runtimeClasspath // 设置类路径为项目的主要源代码路径
+}
+
+task runSend(type: JavaExec) {
+    main = 'top.zoowayss.rabbitmq.workqueue.Send' // 指定要执行的主类
+    classpath = sourceSets.main.runtimeClasspath // 设置类路径为项目的主要源代码路径
+}
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'

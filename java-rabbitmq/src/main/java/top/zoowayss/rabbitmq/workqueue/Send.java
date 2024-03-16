@@ -1,4 +1,4 @@
-package top.zoowayss.rabbitmq.hello;
+package top.zoowayss.rabbitmq.workqueue;
 
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
@@ -23,7 +23,7 @@ public class Send {
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
             channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-            String message = "Hello World!";
+            String message = String.join(" ", argv);
             channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
             log.info(" [x] Sent '{}'", message);
         }

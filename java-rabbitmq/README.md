@@ -22,3 +22,25 @@ services:
 打开 http://localhost:15672 即可看到 rabbitmq  控制台
 
 ![image-20240316111841922](img/image-20240316111841922.png)
+
+## Hello World
+
+
+
+
+
+## Work Queues
+
+
+
+
+
+## Publish/Subscribe
+
+
+
+## Routing
+
+
+
+## RPC
