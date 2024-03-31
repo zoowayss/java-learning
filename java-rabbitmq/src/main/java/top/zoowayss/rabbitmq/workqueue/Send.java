@@ -22,7 +22,7 @@ public class Send {
         factory.setPassword("password");
         try (Connection connection = factory.newConnection();
              Channel channel = connection.createChannel()) {
-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
+            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
             String message = String.join(" ", argv);
             channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
             log.info(" [x] Sent '{}'", message);
