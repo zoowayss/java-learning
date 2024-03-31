@@ -1,0 +1,20 @@
+server:
+  port: 9999
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: true
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  datasource:
+    url: jdbc:mysql://192.168.0.74:3326/web-util?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: rootmima
+
+
+  data:
+    redis:
+      host: 192.168.0.74
+      port: 6379
+      password: qqq
